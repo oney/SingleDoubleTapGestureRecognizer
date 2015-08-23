@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import SingleDoubleTapGestureRecognizer
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let tap = SingleDoubleTapGestureRecognizer(target: self, singleAction: Selector("singleTap"), doubleAction: Selector("doubleTap"))
+        tap.duration = 0.8
+        view.addGestureRecognizer(tap)
+    }
+    
+    func singleTap() {
+        println("singleTap")
+    }
+    
+    func doubleTap() {
+        println("doubleTap")
     }
 
     override func didReceiveMemoryWarning() {

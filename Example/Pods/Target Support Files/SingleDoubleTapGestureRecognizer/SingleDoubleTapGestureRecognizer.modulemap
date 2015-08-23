@@ -1,0 +1,6 @@
+framework module SingleDoubleTapGestureRecognizer {
+  umbrella header "SingleDoubleTapGestureRecognizer-umbrella.h"
+
+  export *
+  module * { export * }
+}

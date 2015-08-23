@@ -1,0 +1,6 @@
+framework module Pods_SingleDoubleTapGestureRecognizer_Example {
+  umbrella header "Pods-SingleDoubleTapGestureRecognizer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
